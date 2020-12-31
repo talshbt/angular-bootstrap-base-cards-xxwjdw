@@ -5,14 +5,14 @@
 
 .flex-container > div {
   background-color: #f1f1f1;
-  margin: 10px;
+  margin-left: 50px;
   padding: 20px;
   font-size: 30px;
 }
 
 .container {
   display: grid;
-  height: 200px;
+  height: 100px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   background: rgba(138, 135, 135, 0.24);
