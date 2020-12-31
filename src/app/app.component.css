@@ -1,16 +1,20 @@
 .flex-container {
   display: flex;
   justify-content: flex-end;
+  
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
   margin-left: 50px;
+  margin: 50px;
   padding: 20px;
-  font-size: 30px;
+   flex: 0 1 calc(200% - 50px);
 }
 
-.container {
+
+
+/* .container {
   display: grid;
   height: 100px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,9 +22,15 @@
   background: rgba(138, 135, 135, 0.24);
   justify-items: end;
 
-}
-.item {
+} */
+/* .item {
   width: 50%;
   height: 50%;
   background: rgba(255, 213, 70, 0.4);
+} */
+
+
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
 }
