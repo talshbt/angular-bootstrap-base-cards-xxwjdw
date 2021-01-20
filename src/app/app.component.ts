@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.scss' ]
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
-export class AppComponent  {
+export class AppComponent {
   msg;
-  name = 'Angular';
+  name = "Angular";
   getData(msg) {
-    alert('xxx')
+    alert("xxx");
     this.msg = msg;
   }
- 
 }
