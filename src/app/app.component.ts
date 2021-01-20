@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent  {
+  msg;
   name = 'Angular';
+  getData(msg) {
+    alert('xxx')
+    this.msg = msg;
+  }
+ 
 }
