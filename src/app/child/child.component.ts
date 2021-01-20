@@ -6,13 +6,13 @@ import { Component, EventEmitter, OnInit, Output } from "@angular/core";
   styleUrls: ["./child.component.css"]
 })
 export class ChildComponent implements OnInit {
-  @Output() addChanged = new EventEmitter();
+  @Output() historyDataChanged = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {}
 
-  onAdd() {
-    this.addChanged.emit("hello");
+  onSendHistoryData() {
+    this.historyDataChanged.emit("historyDataChanged");
   }
 }
