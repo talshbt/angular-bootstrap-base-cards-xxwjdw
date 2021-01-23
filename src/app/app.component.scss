@@ -25,19 +25,17 @@
   font-size: 30px;
 }
 
-
-.custom-flex-container{
+.custom-flex-container {
   display: flex;
   flex-wrap: wrap;
   width: 400px;
 }
 
-.custom-item{
+.custom-item {
   font-weight: 600;
-  width:100px;
-  height:100px;
+  width: 100px;
+  height: 100px;
 }
-
 
 .new-container {
   display: flex;
@@ -47,22 +45,19 @@
   //height: 100px;
 }
 
-.x{
+.x {
   background-color: DodgerBlue;
-width: 70%;
+  width: 70%;
 }
 
-.y{
+.y {
   background-color: red;
   width: 30%;
-
 }
 
-
-.end{
+.end {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
   justify-content: space-between;
-
+  width: 30%;
 }
