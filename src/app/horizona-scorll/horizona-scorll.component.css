@@ -9,7 +9,7 @@
 } */
 
 /* Decorations */
-.col-4 { color: #fff; font-size: 100px; padding-bottom: 20px; padding-top: 18px; }
+.col-4 { color: #fff; font-size: 40px; padding-bottom: 20px; padding-top: 18px; }
 .col-4:nth-child(3n+1) { background: #c69; }
 .col-4:nth-child(3n+2) { background: #9c6; }
 /* .col-4:nth-child(3n+3) { background: #69c; } */
@@ -19,7 +19,7 @@
 .col-6:nth-child(3n+2) { background: #9c6; } */
 /* .col-6:nth-child(3n+3) { background: #69c; } */
 
-.col-8 { color: #fff; font-size: 100px; padding-bottom: 20px; padding-top: 18px; }
+.col-8 { color: #fff; font-size: 40px; padding-bottom: 20px; padding-top: 18px; }
 .col-8:nth-child(3n+1) { background: #c69; }
 .col-8:nth-child(3n+2) { background: #9c6; }
 /* .col-8:nth-child(3n+3) { background: #69c; } */
