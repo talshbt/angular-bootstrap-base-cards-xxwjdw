@@ -1,0 +1,26 @@
+  .row-list {
+
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 8px;
+      //background-color: yellow;
+
+      &>li{
+        list-style: none;
+        flex: 1 0 21%;
+        text-align: right;
+        margin: 2px;
+        padding: 0;
+        height: 50px;
+
+      }
+    
+  }
+
+  .x{
+    background-color: red;
+  }
+
+  .y{
+    background-color: green;
+  }
