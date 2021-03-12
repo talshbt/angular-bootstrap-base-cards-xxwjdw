@@ -1,31 +1,26 @@
-<nav class="navbar mb-5">
-  <a class="navbar-brand" href="/">Angular & Bootstrap</a>
-  <div class="navbar-expand mr-auto">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
+<div class="card m-3">
+    <h5 class="card-header">Angular + Reactive Forms - Required Checkbox</h5>
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group form-check">
+                <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+                <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
+                <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div>
+            </div>
+            <div>
+                <button class="btn btn-primary mr-1">Submit</button>
+                <button class="btn btn-secondary" type="reset" (click)="onReset()">Reset</button>
+            </div>
+        </form>
     </div>
-  </div>
-  <div class="navbar-expand ml-auto navbar-nav">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="https://github.com/beeman" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://twitter.com/beeman_nl" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://medium.com/@beeman" target="_blank">
-        <i class="fa fa-medium"></i>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<div class="container">
 </div>
-<nav class="navbar navbar-dark bg-dark mt-5 fixed-bottom">
-  <div class="navbar-expand m-auto navbar-text">
-    Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/beeman_nl">beeman</a>
-  </div>
-</nav>
+
+<!-- credits -->
+<div class="text-center">
+    <p>
+        <a href="#" target="_top">Angular - Required Checkbox Example</a>
+    </p>
+    <p>
+        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p>
+</div>
