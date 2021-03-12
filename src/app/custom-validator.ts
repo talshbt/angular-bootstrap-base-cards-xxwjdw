@@ -1,18 +1,15 @@
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
-// setup simple regex for white listed characters
-const validCharacters = /[^\s\w,.:&\/()+%'`@-]/;
+export function requireCheckboxesToBeCheckedValidator( openPdf:boolean): ValidatorFn {
+  console.log(openPdf)
+  return function validate (formGroup: FormGroup) {
+    const control = formGroup.controls['acceptTerms'];
+    if (formGroup.valid && !openPdf){
+      return {
+        requireOpenFile: true,
+      };
 
-
-// create your class that extends the angular validator class
-export class CustomValidators extends Validators {
-  static validateCharacters(control: FormControl) {
-    if (control.value && control.value.length > 0) {
-      const matches = control.value.match(validCharacters);
-      return matches 
-      && matches.length ? { 'not_allowed_characters': matches } : null;
-    } else {
-      return null;
     }
-  }
+    return null;
+  };
 }
